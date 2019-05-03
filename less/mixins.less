@@ -1,1 +1,45 @@
 // Mixins Here
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    border: 0.2rem solid @nav-border;
+    border-radius: 1rem;
+    background-color: @nav-bg;
+}
+
+.btn(@bordercolor, @backgroundcolor, @color){
+    background-color: @backgroundcolor;
+    color: @color;
+    border-color: @bordercolor;
+    width: 30%;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+
+    transition-duration: 0.3s;
+    &:hover{
+        background-color: @color;
+        color: @backgroundcolor;
+        transition-duration: 0.2s;
+        
+    }
+
+    @media (max-width: 630px){
+        width: 40%;
+    }
+
+    @media @mobile{
+        width: 100%;
+    }
+
+}
+
+.fixheader{
+    position: fixed;
+    width:100%;
+    max-width:800px;
+    margin: 0 auto;
+}
