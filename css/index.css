@@ -316,15 +316,20 @@ footer {
   margin-bottom: 2.6rem;
 }
 .home .walk .walk-text .btn {
-  padding: 1rem 0.5rem;
-  width: 30%;
-  border-color: none;
-  border-radius: 1rem;
   background-color: #22283A;
   color: white;
-  font-size: 1.6rem;
+  border-color: #22283A;
+  width: 30%;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  transition-duration: 0.3s;
 }
-@media (max-width: 650px) {
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  transition-duration: 0.2s;
+}
+@media (max-width: 630px) {
   .home .walk .walk-text .btn {
     width: 40%;
   }
@@ -332,8 +337,6 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    padding: 2.8rem 0rem;
-    order: 2;
   }
 }
 .home .walk .walk-img {
